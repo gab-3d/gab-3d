@@ -94,6 +94,8 @@ plugins:
       pagination_per_page: 5
       pagination_format: $link_first $link_previous ~2~ $link_next $link_last
   - search: null
+  - tags:
+      tags_file: tags.md 
 
 
 extra:
@@ -166,4 +168,5 @@ nav:
   - Articoli: articoli/index.md
   - Klipper da 0: articoli/posts/2024-04-15-installazione-klipper.md
   - Video: video/index.md
+  - Tags: tags.md
   - About: about/index.md

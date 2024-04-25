@@ -1,28 +1,41 @@
 ---
 title: Voron 2.4 - 350x350 - Orange
+tags:
+    - Voron2.4
+    - Voron Mods
 ---
-# Voron 2.4 - 350x350
+# Voron 2.4 - 350x350 
 
 Iniziata originalmente con un kit FormBot:
 
-## Lista componenti
 
-- Spider 1.0
-- CAN BUS con BTT UTC
-- Rasperry PI 4
-- Display da 7"
-- Kit Metal sul gantry, motori AB e XY joint
-- Piatto ruvido nero
-- Pannelli in DBond
-- MMU Trad Rack
+!!! Struttura
+    |||
+    |:--------------|:------------------------------------------------------|
+    |Scheda         | Spider 1.0                                            |
+    |Comunicazione  | Can Bus con BTT UTC                                   |
+    |Schermo        | BTT da 7"                                             |
+    |CPU            | Rasperry PI 4                                         |
+    |Struttura      | Profili 2020 Neri                                     |
+    |               | Kit Metal sul gantry, motori AB e XY joint            |
+    |               | Pannelli neri in DBond                                |
+    |Piatto         | Magnetico nero ruvido                                 |
+    |MMU            | Annex TradRack                                        |
+    |Ventole        |                                                       |
+    |Sensori Temperatura | |
 
-
-##### Testa:
-
-- Stealthburner con filament cutter
-- Mellow RPI 2040 Pro
-- Rapido Plus
-- TAP in PPS CF
+!!! Testa
+    |Tipo           |Descrizione                                            |
+    |:--------------|:------------------------------------------------------|
+    |Testa          | Stealthburner                                         |
+    |ToolBoard      | Mellow RPI 2040 Pro                                   |
+    |HotEnd         | Rapido 2 Plus                                         |
+    |Sensore        | PT 1000                                               |
+    |Sensore Piatto | TAP PPS CF                                            |
+    |Comunicazione  | CanBus                                                |
+    |Taglio Filo    | Filametrix                                            |
+    |Ugello         | Slice Engineering                                     |
+    |Ventole        |                                                       |
 
 
 ## Foto Gallery
