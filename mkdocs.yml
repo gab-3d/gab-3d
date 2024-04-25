@@ -1,0 +1,169 @@
+repo_url: https://github.com/gab-3d/web
+repo_name: gab-3d.github.io
+#repo_name: arv-anshul.github.io
+site_author: GAB 3D
+site_description: GAB 3D personal website.
+site_name: GAB 3D
+site_url: https://www.gab-3d.com
+
+theme:
+  language: it
+  name: material
+  font:
+    text: Rubik
+  icon:
+    repo: material/book
+    logo: fontawesome/solid/cube
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - navigation.indexes
+    - navigation.path
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+  palette:
+    
+    - scheme: default
+      primary: white
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+      
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: white
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+      
+
+
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.tilde
+  - tables
+
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - blog:
+      blog_dir: articoli
+      post_dir: "articoli/posts"
+      blog_toc: true
+      archive_date_format: MMMM, yyyy
+      archive_url_date_format: yyyy/MM
+      categories_url_format: "categorie/{slug}"
+      post_url_format: "{slug}"
+      pagination_per_page: 5
+      pagination_format: $link_first $link_previous ~2~ $link_next $link_last
+  - search: null
+
+
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_PROPERTY
+    feedback:
+      title: Questa pagina ti è stata utile?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: Questa pagina è stata utile
+          data: 1
+          note: Grazie per il tuo feedback! 
+        - icon: material/thumb-down-outline
+          name: Questa pagina potrebbe essere migliorata
+          data: 0
+          note: Grazie per il tuo feedback! 
+                #Aiutaci a migliorare questa pagina <a href="..." target="_blank" rel="noopener">feedback form</a>
+  social:
+    - icon: material/email
+      link: mailto:gab-3d@outlook.com
+      name: E-Mail
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/gab3dp/
+      name: Connect on Instagram
+    - icon: fontawesome/brands/github
+      link: https://github.com/gab-3d
+      name: See my GitHub Profile
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/+yDZPo5TdfTw1ZjA0
+      name: Connect on Voron Italia Telegram
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/gab3dp
+      name: Connect on Facebook
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@gab-3d
+      name: Connect on Youtube
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@klipper-ita
+      name: Connect on Youtube Klipper Italiano
+
+copyright: |
+  Copyright &copy; 2024 <a href="https://github.com/gab-3d">GAB 3D</a>
+
+extra_css:
+  - stylesheets/customize.css
+  - stylesheets/extra.css
+  - stylesheets/simpleicons.css
+
+
+nav:
+  - Home: index.md
+  - Printers:
+      - printers/index.md
+    
+      - printers/voron/voron24.md
+      - printers/voron/voron24gialla.md
+      - printers/voron/vorontrident.md
+      - printers/voron/voronzero.md
+      - printers/totest.md
+      - printers/others.md
+      
+      # - Youtube Watch History:
+      #     - printers/yt-watch-history/index.md
+      #     - printers/yt-watch-history/ctt.md
+      #     - printers/yt-watch-history/channel_reco.md
+      # - Spotify Analysis:
+      # - printers/spotify-analysis/index.md
+      #- printers/campusx-dsmp.md
+  - Articoli: articoli/index.md
+  - Klipper da 0: articoli/posts/2024-04-15-installazione-klipper.md
+  - Video: video/index.md
+  - About: about/index.md
